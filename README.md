@@ -3,8 +3,9 @@ UI automation automates interactions with graphical user interface elements in s
 
 UI automation: key concepts 
 The key concepts of UI Automation are:
-    1 UI Automation activities
-    2 Activity properties
+
+	1 UI Automation activities
+	2 Activity properties
     3 Targeting methods
     4 Input and output methods
     5 Recorders
