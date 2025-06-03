@@ -102,25 +102,25 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Logon" sap:VirtualizedContainerService.HintSize="1500,1566" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Logon" sap:VirtualizedContainerService.HintSize="1500,1568" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Logon" sap:VirtualizedContainerService.HintSize="518,1543" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Logon" sap:VirtualizedContainerService.HintSize="518,1545" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,1460" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[in_bro_LoginBrowser]" IsDisplayNameAuto="True" ScopeGuid="d39b339f-d3ef-4656-8ce2-4f8db04fbcd6" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,1462" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[in_bro_LoginBrowser]" IsDisplayNameAuto="True" OpenMode="Never" ScopeGuid="d39b339f-d3ef-4656-8ce2-4f8db04fbcd6" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1300" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1302" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>

@@ -92,25 +92,25 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Logoff" sap:VirtualizedContainerService.HintSize="1500,1013" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Logoff" sap:VirtualizedContainerService.HintSize="1500,963" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Logoff Web Site" sap:VirtualizedContainerService.HintSize="520,990" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Logoff Web Site" sap:VirtualizedContainerService.HintSize="520,940" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge ACME System 1 - Dashboard" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,907" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[in_bro_Browser]" InteractionMode="DebuggerApi" ScopeGuid="e2cdd2b9-2568-4e3b-8606-fe8cae55672e" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge ACME System 1 - Dashboard" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,857" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[in_bro_Browser]" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="e2cdd2b9-2568-4e3b-8606-fe8cae55672e" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="452,747" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Check if previous logos is do." sap:VirtualizedContainerService.HintSize="452,697" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Boolean" Name="boo_ExistLogOut" />
               </Sequence.Variables>
@@ -119,18 +119,12 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NCheckElement DelayBefore="0" DisplayName="Check Element 'Log Out'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,189" sap2010:WorkflowViewState.IdRef="NCheckElement_1" Result="[boo_ExistLogOut]" ScopeIdentifier="e2cdd2b9-2568-4e3b-8606-fe8cae55672e" Version="V4">
-                <uix:NCheckElement.Target>
-                  <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/home" CVScreenId="20f567b0-32e4-4751-8be6-c860835ea1ab" ContentHash="Deh3BhQ3nkGW2KTMBc7M4A" CvTextArea="1480, 100, 51, 16" CvTextArgument="Log Out" CvType="Text" DesignTimeRectangle="1466, 82, 80, 50" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Log Out' parentid='bs-example-navbar-collapse-1' tag='A' /&gt;" Guid="d44cd293-9639-402e-9194-bbbafa552f88" InformativeScreenshot="c96c27b41e5bee38b14c0379f74e7264.png" Reference="GcvmgPhY90Kx3uqusteyNg/QqJI6BpYV0m-WiI4mlA8-A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Dashboard' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
-                    <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                        <uix:Target CVScreenId="20f567b0-32e4-4751-8be6-c860835ea1ab" CvTextArea="388, 98, 133, 16" CvTextArgument="ACME System 1" CvType="Text" DesignTimeRectangle="376, 82, 162, 50" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='navbar-brand' aaname='ACME System 1' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='ACME System 1' /&gt;" Guid="90e80652-ac46-4ba0-a843-8c75a59c0aa1" SearchSteps="FuzzySelector, CV" />
-                      </scg:List>
-                    </uix:TargetAnchorable.Anchors>
-                  </uix:TargetAnchorable>
-                </uix:NCheckElement.Target>
-              </uix:NCheckElement>
-              <If Condition="[boo_ExistLogOut = True]" sap:VirtualizedContainerService.HintSize="418,496" sap2010:WorkflowViewState.IdRef="If_1">
+              <ui:UiElementExists DisplayName="Element Exists 'A  https://acme-test.ui...'" Exists="[boo_ExistLogOut]" sap:VirtualizedContainerService.HintSize="418,139" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                <ui:UiElementExists.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="12922c59-affa-47ee-9fc6-e9ac53576ce3" InformativeScreenshot="66aa2f38384affb7fdd68f6046668ceb" Selector="&lt;webctrl aaname='Log Out' parentid='bs-example-navbar-collapse-1' tag='A' /&gt;" TimeoutMS="5000" WaitForReady="COMPLETE" />
+                </ui:UiElementExists.Target>
+              </ui:UiElementExists>
+              <If Condition="[boo_ExistLogOut = True]" DisplayName="If logon does... Logoff" sap:VirtualizedContainerService.HintSize="418,496" sap2010:WorkflowViewState.IdRef="If_1">
                 <If.Then>
                   <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,276" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <sap:WorkflowViewStateService.ViewState>
